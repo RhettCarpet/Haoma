@@ -21,7 +21,7 @@ html_doc.search('.search-list-item a').each do |element|
   recipe_doc = Nokogiri::HTML(recipe_html_file)
 
   recipe_doc.search('.incredients').each do |ingredient|
-    puts ingredient.css('td').text.gsub(/\s+/, "  ")
+    puts ingredient.css('td').text.gsub(/\s+/, " ")
   end
 end
 
